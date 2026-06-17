@@ -762,10 +762,14 @@ footer{padding:48px 0;border-top:1px solid var(--b1)}
     <div class="container">
       <div class="app-hero-inner">
         <div class="app-hero-back" onclick="showPage('home')">← BACK TO PLATFORM</div>
-        <div class="app-hero-icon" style="background:linear-gradient(135deg,#120016,#1a001f);border-radius:20px;display:flex;align-items:center;justify-content:center;padding:10px;width:80px;height:80px"><img src="assets/rosie-management-icon.jpg" alt="Rosie Management icon" style="width:100%;height:100%;object-fit:contain;border-radius:14px;display:block"></div>
-        <div style="font-family:var(--font-mono);font-size:10px;color:#c334f8;letter-spacing:3px;margin-bottom:12px">BOOKKEEPING · EXPENSE TRACKING · BUSINESS RECORDS</div>
-        <h1 class="app-hero-headline">Run the business.<br>Rosie keeps the<br><em style="color:#c334f8">books cleaner.</em></h1>
-        <p class="app-hero-sub">Rosie Management is an AI-powered bookkeeping assistant for any business that you can text from your phone 24/7. Rosie is always available, always working, and always ready to track expenses, organize receipts, log payments, and prep your paperwork for tax season so it is clean and ready to hand off to your accountant.</p>
+        <div style="display:flex;align-items:flex-start;gap:28px;flex-wrap:wrap;margin-bottom:8px">
+          <div class="app-hero-icon" style="background:linear-gradient(135deg,#120016,#1a001f);border-radius:28px;display:flex;align-items:center;justify-content:center;padding:18px;width:220px;height:220px;flex:0 0 220px;margin-bottom:0"><img src="assets/rosie-management-icon.jpg" alt="Rosie Management icon" style="width:100%;height:100%;object-fit:contain;border-radius:22px;display:block"></div>
+          <div style="flex:1 1 320px;min-width:min(320px,100%)">
+            <div style="font-family:var(--font-mono);font-size:10px;color:#c334f8;letter-spacing:3px;margin-bottom:12px">BOOKKEEPING · EXPENSE TRACKING · BUSINESS RECORDS</div>
+            <h1 class="app-hero-headline">Run the business.<br>Rosie keeps the<br><em style="color:#c334f8">books cleaner.</em></h1>
+            <p class="app-hero-sub">Rosie Management is an AI-powered bookkeeping assistant for any business that you can text from your phone 24/7. Rosie is always available, always working, and always ready to track expenses, organize receipts, log payments, and prep your paperwork for tax season so it is clean and ready to hand off to your accountant.</p>
+          </div>
+        </div>
         <div class="app-hero-actions">
           <span class="btn" style="background:#c334f8;color:#000;display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer" onclick="document.getElementById('management-signup').scrollIntoView({behavior:'smooth'})">Sign Up →</span>
           <span class="btn btn-ghost" onclick="document.getElementById('management-features').scrollIntoView({behavior:'smooth'})">See Features ↓</span>
