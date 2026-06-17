@@ -261,8 +261,9 @@ footer{padding:48px 0;border-top:1px solid var(--b1)}
     <div class="nav-links">
       <a onclick="showPage('home')">Platform</a>
       <a onclick="showPage('roofing')">Roofing</a>
-      <a onclick="showPage('automotive')">Automotive</a>
       <a onclick="showPage('realestate')">Real Estate</a>
+      <a onclick="showPage('management')">Management</a>
+      <a onclick="showPage('automotive')">Automotive</a>
       <a onclick="showPage('home');setTimeout(()=>document.getElementById('cta').scrollIntoView({behavior:'smooth'}),100)" class="nav-cta">Get Early Access</a>
     </div>
   </div>
@@ -357,12 +358,13 @@ footer{padding:48px 0;border-top:1px solid var(--b1)}
         </div>
 
         <!-- Management -->
-        <div class="app-card reveal" style="--card-color:#68c068;cursor:default">
+        <div class="app-card reveal" onclick="showPage('management')" style="--card-color:#68c068">
           <div class="app-card-icon" style="background:linear-gradient(135deg,#001800,#001e00);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:32px">🏢</div>
           <div class="app-card-name">ROSIE MANAGEMENT</div>
           <div class="app-card-tag" style="color:#68c068">Property Management</div>
           <div class="app-card-desc">Multi-unit inspection platform for property managers. Walk any unit, document any condition, generate tenant-ready reports automatically.</div>
           <div class="app-badge badge-live">● LIVE · BETA TESTING</div>
+          <div class="app-card-arrow">↗</div>
         </div>
 
         <!-- Automotive -->
@@ -496,8 +498,9 @@ footer{padding:48px 0;border-top:1px solid var(--b1)}
         </div>
         <div class="footer-nav">
           <a onclick="showPage('roofing')">Roofing</a>
-          <a onclick="showPage('automotive')">Automotive</a>
           <a onclick="showPage('realestate')">Real Estate</a>
+          <a onclick="showPage('management')">Management</a>
+          <a onclick="showPage('automotive')">Automotive</a>
         </div>
       </div>
     </div>
@@ -748,6 +751,103 @@ footer{padding:48px 0;border-top:1px solid var(--b1)}
   <div class="app-back-section"><span class="btn btn-ghost" onclick="showPage('home')">← Back to Platform</span></div>
 </div>
 
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- PAGE: ROSIE MANAGEMENT                                -->
+<!-- ══════════════════════════════════════════════════════ -->
+<div class="page" id="page-management">
+  <section class="app-page-hero" style="background:linear-gradient(160deg,#080b0e 0%,#00120b 100%)">
+    <div class="app-hero-glow" style="background:radial-gradient(ellipse,rgba(104,192,104,.08) 0%,transparent 70%)"></div>
+    <div class="container">
+      <div class="app-hero-inner">
+        <div class="app-hero-back" onclick="showPage('home')">← BACK TO PLATFORM</div>
+        <div class="app-hero-icon" style="background:linear-gradient(135deg,#001800,#001e00);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:44px;width:80px;height:80px">🏢</div>
+        <div style="font-family:var(--font-mono);font-size:10px;color:#68c068;letter-spacing:3px;margin-bottom:12px">PROPERTY MANAGEMENT · UNIT TURNS · FIELD DOCUMENTATION</div>
+        <h1 class="app-hero-headline">Walk the property.<br>Rosie handles the<br><em style="color:#68c068">paper trail.</em></h1>
+        <p class="app-hero-sub">Rosie Management helps property managers document unit conditions, track maintenance issues, and create tenant-ready records in real time. From move-ins to move-outs, from common areas to work orders, Rosie turns field walks into organized proof.</p>
+        <div class="app-hero-actions">
+          <span class="btn" style="background:#68c068;color:#000;display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer" onclick="document.getElementById('management-signup').scrollIntoView({behavior:'smooth'})">Join the Waitlist →</span>
+          <span class="btn btn-ghost" onclick="document.getElementById('management-features').scrollIntoView({behavior:'smooth'})">See Features ↓</span>
+        </div>
+        <div style="margin-top:28px;display:inline-flex;align-items:center;gap:10px;background:rgba(104,192,104,.08);border:1px solid rgba(104,192,104,.2);border-radius:20px;padding:8px 16px">
+          <div style="width:6px;height:6px;border-radius:50%;background:#68c068;animation:blink 2s ease-in-out infinite"></div>
+          <span style="font-family:var(--font-mono);font-size:10px;color:#68c068;letter-spacing:2px">PHASE 2 · IN DEVELOPMENT · JOIN WAITLIST</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-features" id="management-features">
+    <div class="container">
+      <span class="section-label reveal" style="color:#68c068">What Rosie manages</span>
+      <h2 class="section-title reveal">Every turn, every issue,<br><em style="color:#68c068">every unit.</em></h2>
+      <div class="features-grid">
+        <div class="feature-card reveal"><div class="feature-icon">📸</div><div class="feature-title">MOVE-IN / MOVE-OUT DOCUMENTATION</div><div class="feature-desc">Walk a unit with the camera on. Rosie timestamps photos, organizes room-by-room condition notes, and turns the walkthrough into a clean record for tenants, owners, and your office.</div></div>
+        <div class="feature-card reveal"><div class="feature-icon">🛠️</div><div class="feature-title">MAINTENANCE ISSUE CAPTURE</div><div class="feature-desc">Broken blinds, leaks, damaged flooring, appliance problems, wall patches, smoke detector issues — Rosie spots and records problems as you walk so nothing gets forgotten after the visit.</div></div>
+        <div class="feature-card reveal"><div class="feature-icon">🧾</div><div class="feature-title">TENANT-READY REPORTS</div><div class="feature-desc">Generate polished summaries with photos, issue lists, and recommended next steps. Use them for tenant communication, contractor dispatch, owner updates, or internal follow-up.</div></div>
+        <div class="feature-card reveal"><div class="feature-icon">📍</div><div class="feature-title">FIELD PROOF WITH CONTEXT</div><div class="feature-desc">Rosie keeps the who, what, and where together — unit number, room context, timestamps, and supporting photos — so your team has proof instead of vague notes in a text thread.</div></div>
+        <div class="feature-card reveal"><div class="feature-icon">🏘️</div><div class="feature-title">COMMON AREA INSPECTIONS</div><div class="feature-desc">Use the same workflow for hallways, laundry rooms, basements, parking lots, roofs, and exterior walks. Rosie helps standardize recurring property checks across every building in the portfolio.</div></div>
+        <div class="feature-card reveal"><div class="feature-icon">📲</div><div class="feature-title">OFFICE-READY FOLLOW-UP</div><div class="feature-desc">Rosie packages the visit so your office can act fast — dispatch vendors, track turn readiness, confirm completion, and keep a searchable history without retyping field notes later.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-top:1px solid var(--b1);background:var(--s1)">
+    <div class="container">
+      <span class="section-label reveal" style="color:#68c068">How teams use it</span>
+      <h2 class="section-title reveal">Built for the messy work<br><em style="color:#68c068">between tenants.</em></h2>
+      <div class="pricing-cards">
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Leasing & Turnover</div>
+          <div class="pricing-desc">Document move-outs, estimate repairs, confirm punch-list completion, and create a ready-to-rent record before the next showing.</div>
+          <div class="pricing-features">
+            <div class="pf"><span class="pf-check">✓</span>Room-by-room condition capture</div>
+            <div class="pf"><span class="pf-check">✓</span>Photo-backed damage records</div>
+            <div class="pf"><span class="pf-check">✓</span>Turn readiness summaries</div>
+          </div>
+        </div>
+        <div class="pricing-card featured reveal" style="background:linear-gradient(160deg,#0a1d12,#092015);border-color:#68c068">
+          <div class="pricing-badge" style="background:#68c068">BEST FIT</div>
+          <div class="pricing-tier" style="color:#68c068">Property Operations</div>
+          <div class="pricing-desc" style="color:#b8d7bf">For managers juggling units, contractors, and residents. Rosie keeps field inspections, maintenance proof, and follow-up documentation all in one workflow.</div>
+          <div class="pricing-features">
+            <div class="pf" style="color:#cfe7d3"><span class="pf-check">✓</span><strong style="color:#f0f7f1">Multi-property inspection workflow</strong></div>
+            <div class="pf" style="color:#cfe7d3"><span class="pf-check">✓</span>Issue capture + report generation</div>
+            <div class="pf" style="color:#cfe7d3"><span class="pf-check">✓</span>Searchable field history</div>
+          </div>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pricing-tier">Owners & Vendors</div>
+          <div class="pricing-desc">Share clean, visual records with owners and contractors so everyone sees the same condition, scope, and urgency without back-and-forth confusion.</div>
+          <div class="pricing-features">
+            <div class="pf"><span class="pf-check">✓</span>Owner update packets</div>
+            <div class="pf"><span class="pf-check">✓</span>Vendor-ready issue summaries</div>
+            <div class="pf"><span class="pf-check">✓</span>Clear proof of completed work</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;border-top:1px solid var(--b1)" id="management-signup">
+    <div class="container" style="max-width:520px">
+      <span class="section-label reveal" style="color:#68c068">Join the waitlist</span>
+      <h2 class="section-title reveal" style="font-size:clamp(28px,4vw,42px);margin-bottom:32px">Run tighter properties with <em style="color:#68c068">less paperwork.</em></h2>
+      <form style="display:flex;flex-direction:column;gap:12px" onsubmit="handleSignup(event,'management')">
+        <input type="text" id="m-name" placeholder="Your name" style="background:var(--s2);border:1px solid var(--b2);color:var(--text);border-radius:8px;padding:13px 16px;font-family:var(--font-body);font-size:14px;outline:none;width:100%" onfocus="this.style.borderColor='#68c068'" onblur="this.style.borderColor='var(--b2)'">
+        <input type="text" id="m-company" placeholder="Company name / property group" style="background:var(--s2);border:1px solid var(--b2);color:var(--text);border-radius:8px;padding:13px 16px;font-family:var(--font-body);font-size:14px;outline:none;width:100%" onfocus="this.style.borderColor='#68c068'" onblur="this.style.borderColor='var(--b2)'">
+        <input type="email" id="m-email" placeholder="Email address" style="background:var(--s2);border:1px solid var(--b2);color:var(--text);border-radius:8px;padding:13px 16px;font-family:var(--font-body);font-size:14px;outline:none;width:100%" onfocus="this.style.borderColor='#68c068'" onblur="this.style.borderColor='var(--b2)'">
+        <input type="tel" id="m-phone" placeholder="Phone number" style="background:var(--s2);border:1px solid var(--b2);color:var(--text);border-radius:8px;padding:13px 16px;font-family:var(--font-body);font-size:14px;outline:none;width:100%" onfocus="this.style.borderColor='#68c068'" onblur="this.style.borderColor='var(--b2)'">
+        <button type="submit" style="background:#68c068;color:#000;border:none;border-radius:8px;padding:14px;font-family:var(--font-body);font-weight:700;font-size:15px;cursor:pointer">Join Waitlist →</button>
+      </form>
+      <div id="management-success" style="display:none;text-align:center;padding:24px;background:var(--s2);border:1px solid var(--green);border-radius:8px;margin-top:12px">
+        <div style="color:var(--green);font-family:var(--font-mono);font-size:12px;letter-spacing:2px;margin-bottom:8px">✓ YOU'RE ON THE LIST</div>
+        <div style="color:var(--muted);font-size:13px">We'll reach out when Rosie Management opens for beta users.</div>
+      </div>
+    </div>
+  </section>
+  <div class="app-back-section"><span class="btn btn-ghost" onclick="showPage('home')">← Back to Platform</span></div>
+</div>
+
 <!-- ══════════════════════ SCRIPTS ══════════════════════ -->
 <script>
 // ── Page routing ───────────────────────────────────────
@@ -805,7 +905,7 @@ initReveals();
 // ── Form handlers ──────────────────────────────────────
 function handleSignup(e, vertical) {
   e.preventDefault();
-  const pfx = {roofing:'r', automotive:'a', realestate:'re'}[vertical];
+  const pfx = {roofing:'r', automotive:'a', realestate:'re', management:'m'}[vertical];
   const name = document.getElementById(pfx + '-name')?.value || '';
   const email = document.getElementById(pfx + '-email')?.value || '';
   if (!email) return;
