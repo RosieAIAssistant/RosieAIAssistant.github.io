@@ -91,7 +91,7 @@ p.lead, .section-head p, .hero-copy p, .copy p, .card p, .copy li, details p, .c
   border-radius: 26px; overflow:hidden; position:relative;
   background-size: cover; background-position: center;
 }
-.hero-photo { min-height: 430px; background-image: linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.24)), url('images/exterior-1.jpg'); }
+.hero-photo { min-height: 430px; background-image: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.28)), url('images/building-front.jpg'); }
 .page-photo { min-height: 360px; background-image: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.18)), url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80'); }
 .hero-badge {
   position:absolute; left:20px; right:20px; bottom:20px; display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px;
